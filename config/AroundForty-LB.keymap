@@ -43,6 +43,11 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
+
+        Right_Click {
+            bindings = <&mkp MB2>;
+            key-positions = <11 12>;
+        };
     };
 
     //マクロ(既存のキーの組み合わせ)
