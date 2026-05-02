@@ -85,6 +85,13 @@
             tapping-term-ms = <230>;
             flavor = "tap-preferred";
         };
+
+        Jap_Eng: Jap_Eng {
+            compatible = "zmk,behavior-tap-dance";
+            label = "JAP_ENG";
+            #binding-cells = <0>;
+            bindings = <&kp LANGUAGE_2>, <&kp LANGUAGE_7>;
+        };
     };
 
     //キーマップ設定
