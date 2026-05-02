@@ -26,16 +26,6 @@
 
         muhennkann {
             bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
-        };
-
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
 
@@ -47,6 +37,26 @@
         Setting {
             bindings = <&mo 9>;
             key-positions = <10 34>;
+        };
+
+        Up {
+            bindings = <&kp UP_ARROW>;
+            key-positions = <7 8>;
+        };
+
+        Down {
+            bindings = <&kp DOWN>;
+            key-positions = <17 18>;
+        };
+
+        Left {
+            bindings = <&kp LEFT>;
+            key-positions = <16 17>;
+        };
+
+        Right {
+            bindings = <&kp RIGHT>;
+            key-positions = <19 18>;
         };
     };
 
@@ -217,7 +227,7 @@
 
         Win_JIS_Screen-Edit {
             bindings = <
-&kp ESCAPE      &trans        &trans       &iOS_Controlmi      &trans                 &kp LG(W)    &kp LG(LEFT_ARROW)  &mkp MB3         &kp LG(RIGHT_ARROW)  &kp HOME
+&kp ESCAPE      &trans        &trans       &trans              &trans                 &kp LG(W)    &kp LG(LEFT_ARROW)  &mkp MB3         &kp LG(RIGHT_ARROW)  &kp HOME
 &kp TAB         &kp LEFT_GUI  &kp LS(TAB)  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)    &kp LG(TAB)  &mkp MB1            &kp UP_ARROW     &mkp MB2             &kp PAGE_UP
 &kp LEFT_SHIFT  &trans        &trans       &kp LG(DOWN_ARROW)  &trans                 &trans       &kp LG(T)           &kp LS(LG(TAB))  &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN
 &kp LCTRL       &trans                                         &trans                 &trans       &trans              &trans           &trans               &trans          &trans           &kp END
@@ -230,10 +240,10 @@
 
         iOS_Screen-Edit {
             bindings = <
-&kp ESCAPE      &trans        &trans       &kp LG(UP_ARROW)    &trans                 &kp LC(W)        &kp LA(LEFT_ARROW)  &mkp MB3           &kp LA(RIGHT_ARROW)  &kp HOME
-&kp TAB         &kp LEFT_ALT  &kp LS(TAB)  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)    &kp LC(PAGE_UP)  &mkp MB1            &kp UP_ARROW       &mkp MB2             &kp PAGE_UP
-&kp LEFT_SHIFT  &trans        &trans       &kp LG(DOWN_ARROW)  &trans                 &trans           &kp LC(T)           &kp LC(PAGE_DOWN)  &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN
-&kp LCTRL       &trans                                         &trans                 &trans           &trans              &trans             &trans               &trans          &trans           &kp END
+&kp ESCAPE      &trans        &trans       &iOS_Controlmi                        &trans                 &kp LC(W)        &kp LA(LEFT_ARROW)  &mkp MB3           &kp LA(RIGHT_ARROW)  &kp HOME
+&kp TAB         &kp LEFT_ALT  &kp LS(TAB)  &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &kp LG(RIGHT_ARROW)    &kp LC(PAGE_UP)  &mkp MB1            &kp UP_ARROW       &mkp MB2             &kp PAGE_UP
+&kp LEFT_SHIFT  &trans        &trans       &kp LG(DOWN_ARROW)                    &trans                 &trans           &kp LC(T)           &kp LC(PAGE_DOWN)  &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN
+&kp LCTRL       &trans                                                           &trans                 &trans           &trans              &trans             &trans               &trans          &trans           &kp END
             >;
 
             sensor-bindings =
