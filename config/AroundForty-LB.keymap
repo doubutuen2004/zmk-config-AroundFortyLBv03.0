@@ -92,6 +92,20 @@
             #binding-cells = <0>;
             bindings = <&kp LANGUAGE_2>, <&kp LANGUAGE_7>;
         };
+
+        Back_Forward: Back_Forward {
+            compatible = "zmk,behavior-tap-dance";
+            label = "BACK_FORWARD";
+            #binding-cells = <0>;
+            bindings = <&kp LC(Z)>, <&kp LS(LC(Z))>;
+        };
+
+        Voice_Input: Voice_Input {
+            compatible = "zmk,behavior-tap-dance";
+            label = "VOICE_INPUT";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LEFT_ALT)>, <&kp LC(LS(LEFT_ALT))>;
+        };
     };
 
     //キーマップ設定
@@ -101,10 +115,10 @@
 
         Mac-Default_Layer {
             bindings = <
-&kp Z     &kp W             &kp E  &kp R  &kp T          &kp Y           &kp U          &kp I        &kp O        &kp P
-&mkp MB1  &Scroll_Tap 10 S  &kp D  &kp F  &kp G          &kp H           &kp J          &kp K        &kp L        &kp MINUS
-&kp A     &kp X             &kp C  &kp V  &kp B          &kp LANGUAGE_2  &kp AT_SIGN    &kp N        &kp M        &kp COMMA     &kp PERIOD        &mt RIGHT_SHIFT SLASH
-&kp Q     &kp LEFT_GUI                    &lt 2 ENTER    &kp BACKSPACE   &kp BACKSPACE  &lt 4 ENTER  &lt 6 SPACE  &kp LEFT_ALT  &lt 7 LEFT_SHIFT  &kp DEL
+&kp Z     &kp W             &kp E  &kp R  &kp T          &kp Y          &kp U          &kp I        &kp O        &kp P
+&mkp MB1  &Scroll_Tap 10 S  &kp D  &kp F  &kp G          &kp H          &kp J          &kp K        &kp L        &kp MINUS
+&kp A     &kp X             &kp C  &kp V  &kp B          &Back_Forward  &kp AT_SIGN    &kp N        &kp M        &kp COMMA     &kp PERIOD        &mt RIGHT_SHIFT SLASH
+&kp Q     &Voice_Input                    &lt 2 ENTER    &kp BACKSPACE  &kp BACKSPACE  &lt 4 ENTER  &lt 6 SPACE  &kp LEFT_ALT  &lt 7 LEFT_SHIFT  &kp DEL
             >;
 
             sensor-bindings =
