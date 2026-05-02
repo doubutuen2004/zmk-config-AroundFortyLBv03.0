@@ -43,6 +43,11 @@
             bindings = <&mkp MB2>;
             key-positions = <11 12>;
         };
+
+        Setting {
+            bindings = <&mo 9>;
+            key-positions = <10 34>;
+        };
     };
 
     //マクロ(既存のキーの組み合わせ)
