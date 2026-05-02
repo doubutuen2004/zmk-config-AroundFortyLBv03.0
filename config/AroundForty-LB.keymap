@@ -61,6 +61,20 @@
             bindings = <&none &kp N2 &kp N1 &kp N3 &kp N0 &kp A &kp G &kp LS(U) &kp N1 &kp N2 &kp N3>;
             label = "PASSWORD";
         };
+
+        iOS_Controlmi: iOS_Controlmi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>,
+                <&macro_tap>,
+                <&kp UP_ARROW>,
+                <&macro_release>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+
+            label = "IOS_CONTROLMI";
+        };
     };
 
     //新たな動作を定義する
