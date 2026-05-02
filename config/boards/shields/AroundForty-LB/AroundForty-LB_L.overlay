@@ -27,7 +27,7 @@
 
         /* layer7中はスクロール化 */
         scroll_mode {
-            layers = <7>;
+            layers = <10>;
             input-processors = <&zip_xy_to_scroll_mapper>;
         };
     };
