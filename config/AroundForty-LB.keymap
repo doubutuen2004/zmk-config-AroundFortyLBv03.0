@@ -80,6 +80,30 @@
 
             label = "IOS_CONTROLMI";
         };
+
+        BT0_Layer0: BT0_Layer0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0>, <&macro_wait_time 200>, <&to 0>;
+
+            label = "BT0_LAYER0";
+        };
+
+        BT0_Layer1: BT0_Layer1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 1>, <&macro_wait_time 200>, <&to 1>;
+
+            label = "BT0_LAYER1";
+        };
+
+        BT0_Layer2: BT0_Layer2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 2>, <&macro_wait_time 200>, <&to 2>;
+
+            label = "BT0_LAYER2";
+        };
     };
 
     //新たな動作を定義する
@@ -257,10 +281,10 @@
 
         Scroll {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans       &trans       &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &BT0_Layer2  &BT0_Layer0  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans       &BT0_Layer1  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                            &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
