@@ -78,6 +78,18 @@
             bindings = <&tog 7>;
             key-positions = <25 20>;
         };
+
+        Win_New_Tab {
+            bindings = <&kp LC(T)>;
+            key-positions = <3 2>;
+            layers = <3 4>;
+        };
+
+        iOS_New_Tab {
+            bindings = <&kp LG(T)>;
+            key-positions = <3 2>;
+            layers = <5>;
+        };
     };
 
     //マクロ(既存のキーの組み合わせ)
