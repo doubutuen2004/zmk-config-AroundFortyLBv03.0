@@ -315,10 +315,10 @@
 
         iOS {
             bindings = <
-&kp Z             &kp W   &kp E  &kp R  &kp T          &kp Y              &kp U            &kp I        &kp L          &kp P
-&Scroll_Tap 10 A  &kp S   &kp D  &kp F  &kp G          &kp H              &kp J            &kp K        &kp O          &Jap_Eng
-&mkp MB1          &kp X   &kp C  &kp V  &kp B          &iOS_Back_Forward  &trans           &kp N        &kp M          &kp MINUS            &kp COMMA              &kp PERIOD
-&kp Q             &trans                &lt 5 ENTER    &kp BACKSPACE      &kp RIGHT_SHIFT  &lt 6 SPACE  &kp RIGHT_GUI  &mt RIGHT_ALT SLASH  &mt RCTRL EXCLAMATION  &mt C_AC_NEXT_KEYBOARD_LAYOUT_SELECT QUESTION
+&kp Z             &kp W   &kp E  &kp R  &kp T          &kp Y              &kp U            &kp I        &kp L         &kp P
+&Scroll_Tap 10 A  &kp S   &kp D  &kp F  &kp G          &kp H              &kp J            &kp K        &kp O         &Jap_Eng
+&mkp MB1          &kp X   &kp C  &kp V  &kp B          &iOS_Back_Forward  &trans           &kp N        &kp M         &kp MINUS            &kp COMMA              &kp PERIOD
+&kp Q             &trans                &lt 5 ENTER    &kp BACKSPACE      &kp RIGHT_SHIFT  &lt 6 SPACE  &kp LEFT_GUI  &mt RIGHT_ALT SLASH  &mt RCTRL EXCLAMATION  &mt C_AC_NEXT_KEYBOARD_LAYOUT_SELECT QUESTION
             >;
 
             sensor-bindings =
@@ -355,7 +355,7 @@
         iOS_Screen-Edit {
             bindings = <
 &iOS_Screen_Left      &iOS_Screen_Right      &iOS_Fullscreen  &iOS_Controlmi  &kp LG(T)    &kp LC(W)        &kp LA(LEFT_ARROW)  &mkp MB3           &kp LA(RIGHT_ARROW)  &kp HOME
-&trans                &kp LEFT               &kp LEFT_GUI     &kp TAB         &trans       &kp LC(PAGE_UP)  &mkp MB1            &kp UP_ARROW       &mkp MB2             &kp PAGE_UP
+&kp RG(H)             &kp LEFT               &kp LEFT_GUI     &kp TAB         &trans       &kp LC(PAGE_UP)  &mkp MB1            &kp UP_ARROW       &mkp MB2             &kp PAGE_UP
 &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LC(LS(TAB))  &kp LC(TAB)     &kp LG(R)    &kp LG(W)        &kp LC(T)           &kp LC(PAGE_DOWN)  &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN
 &trans                &trans                                                  &trans       &trans           &trans              &iOS_Copy_Cut      &iOS_Paste_Value     &trans          &trans           &kp END
             >;
