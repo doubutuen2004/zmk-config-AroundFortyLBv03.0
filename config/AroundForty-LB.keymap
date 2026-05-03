@@ -296,19 +296,19 @@
 
         Setting {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans       &trans       &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &BT0_Layer2  &BT0_Layer0  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans       &BT0_Layer1  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                            &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         Scroll {
             bindings = <
-&trans  &trans  &trans       &trans       &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &BT0_Layer2  &BT0_Layer0  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans       &BT0_Layer1  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                            &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
