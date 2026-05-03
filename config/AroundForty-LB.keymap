@@ -289,10 +289,10 @@
 
         Win_US {
             bindings = <
-&kp Z     &kp W             &kp E  &kp R  &kp T          &kp Y          &kp U            &kp I        &kp L      &kp P
-&mkp MB1  &Scroll_Tap 10 S  &kp D  &kp F  &kp G          &kp H          &kp J            &kp K        &kp O      &Jap_Eng
-&kp A     &kp X             &kp C  &kp V  &kp B          &Back_Forward  &trans           &kp N        &kp M      &kp MINUS            &kp COMMA           &kp PERIOD
-&kp Q     &Voice_Input                    &lt 3 ENTER    &kp BACKSPACE  &kp RIGHT_SHIFT  &lt 6 SPACE  &kp RCTRL  &mt RIGHT_ALT SLASH  &mt RIGHT_GUI EXCL  &kp QUESTION
+&kp Z             &kp W         &kp E  &kp R  &kp T          &kp Y          &kp U            &kp I        &kp L      &kp P
+&Scroll_Tap 10 A  &kp S         &kp D  &kp F  &kp G          &kp H          &kp J            &kp K        &kp O      &Jap_Eng
+&mkp MB1          &kp X         &kp C  &kp V  &kp B          &Back_Forward  &trans           &kp N        &kp M      &kp MINUS            &kp COMMA           &kp PERIOD
+&kp Q             &Voice_Input                &lt 3 ENTER    &kp BACKSPACE  &kp RIGHT_SHIFT  &lt 6 SPACE  &kp RCTRL  &mt RIGHT_ALT SLASH  &mt RIGHT_GUI EXCL  &kp QUESTION
             >;
 
             sensor-bindings =
@@ -315,10 +315,10 @@
 
         iOS {
             bindings = <
-&kp Z     &kp W             &kp E  &kp R  &kp T          &kp Y              &kp U            &kp I        &kp L          &kp P
-&mkp MB1  &Scroll_Tap 10 S  &kp D  &kp F  &kp G          &kp H              &kp J            &kp K        &kp O          &Jap_Eng
-&kp A     &kp X             &kp C  &kp V  &kp B          &iOS_Back_Forward  &trans           &kp N        &kp M          &kp MINUS            &kp COMMA              &kp PERIOD
-&kp Q     &trans                          &lt 5 ENTER    &kp BACKSPACE      &kp RIGHT_SHIFT  &lt 6 SPACE  &kp RIGHT_GUI  &mt RIGHT_ALT SLASH  &mt RCTRL EXCLAMATION  &mt C_AC_NEXT_KEYBOARD_LAYOUT_SELECT QUESTION
+&kp Z             &kp W   &kp E  &kp R  &kp T          &kp Y              &kp U            &kp I        &kp L          &kp P
+&Scroll_Tap 10 A  &kp S   &kp D  &kp F  &kp G          &kp H              &kp J            &kp K        &kp O          &Jap_Eng
+&mkp MB1          &kp X   &kp C  &kp V  &kp B          &iOS_Back_Forward  &trans           &kp N        &kp M          &kp MINUS            &kp COMMA              &kp PERIOD
+&kp Q             &trans                &lt 5 ENTER    &kp BACKSPACE      &kp RIGHT_SHIFT  &lt 6 SPACE  &kp RIGHT_GUI  &mt RIGHT_ALT SLASH  &mt RCTRL EXCLAMATION  &mt C_AC_NEXT_KEYBOARD_LAYOUT_SELECT QUESTION
             >;
 
             sensor-bindings =
