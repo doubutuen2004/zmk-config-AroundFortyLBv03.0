@@ -114,6 +114,48 @@
 
             label = "BT0_LAYER2";
         };
+
+        iOS_Fullscreen: iOS_Fullscreen {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>,
+                <&macro_tap>,
+                <&kp F>,
+                <&macro_release>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+
+            label = "IOS_FULLSCREEN";
+        };
+
+        iOS_Screen_Right: iOS_Screen_Right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>,
+                <&macro_tap>,
+                <&kp LA(RIGHT)>,
+                <&macro_release>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+
+            label = "IOS_SCREEN_RIGHT";
+        };
+
+        iOS_Screen_Left: iOS_Screen_Left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>,
+                <&macro_tap>,
+                <&kp LA(LEFT)>,
+                <&macro_release>,
+                <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
+
+            label = "IOS_SCREEN_LEFT";
+        };
     };
 
     //新たな動作を定義する
@@ -230,7 +272,7 @@
             bindings = <
 &kp LG(LEFT_ARROW)  &kp LG(RIGHT)   &kp LG(UP_ARROW)  &kp LG(TAB)  &trans    &kp LESS_THAN         &kp GREATER_THAN       &kp CARET         &kp PERCENT        &kp DOLLAR
 &trans              &kp LEFT_ARROW  &kp LEFT_ALT      &kp TAB      &trans    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT_SIGN       &kp AMPERSAND      &kp DOUBLE_QUOTES
-&trans              &trans          &trans            &trans       &trans    &trans                &kp NON_US_BACKSLASH   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EXCLAMATION    &kp QUESTION  &kp SINGLE_QUOTE
+&kp LA(LEFT)        &kp LA(RIGHT)   &kp LC(LS(TAB))   &kp LC(TAB)  &trans    &trans                &kp NON_US_BACKSLASH   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EXCLAMATION    &kp QUESTION  &kp SINGLE_QUOTE
 &kp LCTRL           &trans                                         &trans    &trans                &kp BACKSPACE          &Copy_Cut         &Paste_Value       &kp RG(V)          &trans        &kp HASH
             >;
 
@@ -254,10 +296,10 @@
 
         iOS_Screen-Edit {
             bindings = <
-&kp ESCAPE        &trans    &trans        &iOS_Controlmi      &trans                 &kp LC(W)        &kp LA(LEFT_ARROW)  &mkp MB3           &kp LA(RIGHT_ARROW)  &kp HOME
-&kp LG(LA(LEFT))  &kp LEFT  &kp LEFT_GUI  &kp TAB             &kp LG(RIGHT_ARROW)    &kp LC(PAGE_UP)  &mkp MB1            &kp UP_ARROW       &mkp MB2             &kp PAGE_UP
-&kp LEFT_SHIFT    &trans    &trans        &kp LG(DOWN_ARROW)  &trans                 &trans           &kp LC(T)           &kp LC(PAGE_DOWN)  &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN
-&kp LCTRL         &trans                                      &trans                 &trans           &trans              &Copy_Cut          &trans               &trans          &trans           &kp END
+&iOS_Screen_Left      &iOS_Screen_Right      &iOS_Fullscreen  &iOS_Controlmi  &trans    &kp LC(W)        &kp LA(LEFT_ARROW)  &mkp MB3           &kp LA(RIGHT_ARROW)  &kp HOME
+&trans                &kp LEFT               &kp LEFT_GUI     &kp TAB         &trans    &kp LC(PAGE_UP)  &mkp MB1            &kp UP_ARROW       &mkp MB2             &kp PAGE_UP
+&kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LC(LS(TAB))  &kp LC(TAB)     &trans    &trans           &kp LC(T)           &kp LC(PAGE_DOWN)  &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN
+&trans                &trans                                                  &trans    &trans           &trans              &Copy_Cut          &trans               &trans          &trans           &kp END
             >;
 
             sensor-bindings =
@@ -267,10 +309,10 @@
 
         Num-Symbol_US {
             bindings = <
-&kp F1   &kp F2   &kp F3                  &kp F4  &kp F5                     &kp PLUS   &kp MINUS      &kp N7        &kp N8     &kp N9
-&kp F6   &kp F7   &kp F8                  &kp F9  &kp F10                    &kp EQUAL  &kp COLON      &kp N4        &kp N5     &kp N6
-&kp F11  &kp F12  &kp LG(LS(LEFT_ARROW))  &trans  &kp LG(LS(RIGHT_ARROW))    &trans     &kp AMPERSAND  &kp ASTERISK  &kp SLASH  &kp N1  &kp N2         &kp N3
-&trans   &trans                                   &trans                     &trans     &kp BACKSPACE  &kp RET       &trans     &trans  &kp AMPERSAND  &kp BSPC
+&trans   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp F5                     &kp PLUS   &kp MINUS      &kp N7        &kp N8     &kp N9
+&kp N0   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp F10                    &kp EQUAL  &kp COLON      &kp N4        &kp N5     &kp N6
+&kp F11  &kp N7        &kp N8        &kp N9        &kp LG(LS(RIGHT_ARROW))    &trans     &kp AMPERSAND  &kp ASTERISK  &kp SLASH  &kp N1  &kp N2         &kp N3
+&trans   &trans                                    &trans                     &trans     &kp BACKSPACE  &kp RET       &trans     &trans  &kp AMPERSAND  &kp BSPC
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
