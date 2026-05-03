@@ -214,17 +214,15 @@
         };
 
         Win_Sleep_Off: Win_Sleep_Off {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
             bindings =
                 <&macro_press>,
                 <&kp LEFT_GUI>,
                 <&macro_tap>,
                 <&kp X>,
                 <&macro_release>,
-                <&kp LEFT_GUI>,
-                <&macro_tap>,
-                <&kp U>;
+                <&kp LEFT_GUI &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
 
             label = "WIN_SLEEP_OFF";
         };
@@ -440,10 +438,10 @@
 
         Scroll {
             bindings = <
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &Win_Sleep_Off    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &Win_Sleep_Off U    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                  &trans              &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
