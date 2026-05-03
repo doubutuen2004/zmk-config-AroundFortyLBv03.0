@@ -29,9 +29,9 @@
         scroll_mode {
             layers = <10>;
             input-processors = 
+                <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,
                 <&zip_xy_scaler 1 4>,
-                <&zip_xy_to_scroll_mapper>,
-                <&zip_xy_transform INPUT_TRANSFORM_INVERT_X>;
+                <&zip_xy_to_scroll_mapper>;
         };
     };
 };
