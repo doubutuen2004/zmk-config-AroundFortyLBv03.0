@@ -288,16 +288,16 @@
             bindings = <&kp RG(C)>, <&kp RG(X)>;
         };
 
-        Paste_Value: Paste_Value {
+        Win_Paste_Value: Win_Paste_Value {
             compatible = "zmk,behavior-tap-dance";
-            label = "PASTE_VALUE";
+            label = "WIN_PASTE_VALUE";
             #binding-cells = <0>;
             bindings = <&kp RC(V)>, <&kp RS(RC(V))>;
         };
 
-        Win_Copy_Paste: Win_Copy_Paste {
+        Win_Copy_Cut: Win_Copy_Cut {
             compatible = "zmk,behavior-tap-dance";
-            label = "WIN_COPY_PASTE";
+            label = "WIN_COPY_CUT";
             #binding-cells = <0>;
             bindings = <&kp RC(C)>, <&kp RC(X)>;
         };
@@ -363,10 +363,10 @@
 
         Win_US_Screen-Edit {
             bindings = <
-&kp LG(LEFT_ARROW)  &kp LG(RIGHT)      &kp LG(UP_ARROW)  &kp LG(TAB)  &kp LC(T)    &kp LESS_THAN         &kp GREATER_THAN       &kp CARET         &kp PERCENT        &kp DOLLAR
-&trans              &kp LEFT_ARROW     &kp LEFT_ALT      &kp TAB      &kp LC(S)    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT_SIGN       &kp AMPERSAND      &kp DOUBLE_QUOTES
-&kp LA(LEFT)        &kp LA(RIGHT)      &kp LC(LS(TAB))   &kp LC(TAB)  &kp F5       &kp LC(W)             &kp NON_US_BACKSLASH   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EXCLAMATION    &kp QUESTION  &kp SINGLE_QUOTE
-&kp LC(PAGE_UP)     &kp LC(PAGE_DOWN)                                 &trans       &Win_Sleep_Off        &kp BACKSPACE          &Win_Copy_Paste   &Paste_Value       &kp RG(V)          &trans        &kp HASH
+&kp LG(LEFT_ARROW)  &kp LG(RIGHT)      &kp LG(UP_ARROW)  &kp LG(TAB)  &Win_Copy_Cut       &kp LESS_THAN         &kp GREATER_THAN       &kp CARET         &kp PERCENT        &kp DOLLAR
+&kp LG(LS(LEFT))    &kp LEFT_ARROW     &kp LEFT_ALT      &kp TAB      &Win_Paste_Value    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT_SIGN       &kp AMPERSAND      &kp DOUBLE_QUOTES
+&kp LA(LEFT)        &kp LA(RIGHT)      &kp LC(LS(TAB))   &kp LC(TAB)  &kp LG(V)           &kp F5                &kp NON_US_BACKSLASH   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EXCLAMATION    &kp QUESTION  &kp SINGLE_QUOTE
+&kp LC(PAGE_UP)     &kp LC(PAGE_DOWN)                                 &trans              &kp LC(S)             &kp BACKSPACE          &trans            &trans             &trans             &trans        &kp HASH
             >;
 
             sensor-bindings =
@@ -389,10 +389,10 @@
 
         iOS_Screen-Edit {
             bindings = <
-&iOS_Screen_Left      &iOS_Screen_Right      &iOS_Fullscreen  &iOS_Controlmi  &kp LG(T)    &kp LC(W)        &kp LA(LEFT_ARROW)  &mkp MB3           &kp LA(RIGHT_ARROW)  &kp HOME
-&kp RG(H)             &kp LEFT               &kp LEFT_GUI     &kp TAB         &trans       &kp LC(PAGE_UP)  &mkp MB1            &kp UP_ARROW       &mkp MB2             &kp PAGE_UP
-&kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LC(LS(TAB))  &kp LC(TAB)     &kp LG(R)    &kp LG(W)        &kp LC(T)           &kp LC(PAGE_DOWN)  &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN
-&trans                &trans                                                  &trans       &trans           &trans              &iOS_Copy_Cut      &iOS_Paste_Value     &trans          &trans           &kp END
+&iOS_Screen_Left      &iOS_Screen_Right      &iOS_Fullscreen  &iOS_Controlmi  &iOS_Copy_Cut       &kp LC(W)        &kp LA(LEFT_ARROW)  &mkp MB3           &kp LA(RIGHT_ARROW)  &kp HOME
+&kp RG(H)             &kp LEFT               &kp LEFT_GUI     &kp TAB         &iOS_Paste_Value    &kp LC(PAGE_UP)  &mkp MB1            &kp UP_ARROW       &mkp MB2             &kp PAGE_UP
+&kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LC(LS(TAB))  &kp LC(TAB)     &trans              &trans           &kp LC(T)           &kp LC(PAGE_DOWN)  &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN
+&trans                &trans                                                  &trans              &kp LG(R)        &trans              &iOS_Copy_Cut      &iOS_Paste_Value     &trans          &trans           &kp END
             >;
 
             sensor-bindings =
