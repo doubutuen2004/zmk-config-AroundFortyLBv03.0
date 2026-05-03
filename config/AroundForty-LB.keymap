@@ -214,10 +214,10 @@
 
         Win_US_Screen-Edit {
             bindings = <
-&kp LC(A)       &kp LC(X)           &kp LC(C)         &kp LG(TAB)    &kp LC(LS(V))    &kp LESS_THAN         &kp GREATER_THAN       &kp CARET         &kp PERCENT        &kp DOLLAR
-&kp TAB         &kp LG(LEFT_ARROW)  &kp LEFT_COMMAND  &kp LG(RIGHT)  &mkp MB2         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT_SIGN       &kp AMPERSAND      &kp DOUBLE_QUOTES
-&kp LEFT_SHIFT  &trans              &trans            &trans         &mkp MB3         &trans                &kp NON_US_BACKSLASH   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EXCLAMATION    &kp QUESTION  &kp SINGLE_QUOTE
-&kp LCTRL       &trans                                               &trans           &trans                &kp BACKSPACE          &kp ENTER         &trans             &trans             &trans        &kp HASH
+&kp LC(A)       &kp LC(X)      &kp LC(C)     &kp LG(TAB)  &kp LC(LS(V))    &kp LESS_THAN         &kp GREATER_THAN       &kp CARET         &kp PERCENT        &kp DOLLAR
+&kp LG(LEFT)    &kp LG(RIGHT)  &kp LEFT_ALT  &kp TAB      &mkp MB2         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT_SIGN       &kp AMPERSAND      &kp DOUBLE_QUOTES
+&kp LEFT_SHIFT  &trans         &trans        &trans       &mkp MB3         &trans                &kp NON_US_BACKSLASH   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EXCLAMATION    &kp QUESTION  &kp SINGLE_QUOTE
+&kp LCTRL       &trans                                    &trans           &trans                &kp BACKSPACE          &kp ENTER         &trans             &trans             &trans        &kp HASH
             >;
 
             sensor-bindings =
@@ -240,10 +240,10 @@
 
         iOS_Screen-Edit {
             bindings = <
-&kp ESCAPE      &trans        &trans       &iOS_Controlmi                        &trans                 &kp LC(W)        &kp LA(LEFT_ARROW)  &mkp MB3           &kp LA(RIGHT_ARROW)  &kp HOME
-&kp TAB         &kp LEFT_ALT  &kp LS(TAB)  &kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT  &kp LG(RIGHT_ARROW)    &kp LC(PAGE_UP)  &mkp MB1            &kp UP_ARROW       &mkp MB2             &kp PAGE_UP
-&kp LEFT_SHIFT  &trans        &trans       &kp LG(DOWN_ARROW)                    &trans                 &trans           &kp LC(T)           &kp LC(PAGE_DOWN)  &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN
-&kp LCTRL       &trans                                                           &trans                 &trans           &trans              &trans             &trans               &trans          &trans           &kp END
+&kp ESCAPE        &trans             &trans        &iOS_Controlmi      &trans                 &kp LC(W)        &kp LA(LEFT_ARROW)  &mkp MB3           &kp LA(RIGHT_ARROW)  &kp HOME
+&kp LG(LA(LEFT))  &kp LG(LA(RIGHT))  &kp LEFT_GUI  &kp TAB             &kp LG(RIGHT_ARROW)    &kp LC(PAGE_UP)  &mkp MB1            &kp UP_ARROW       &mkp MB2             &kp PAGE_UP
+&kp LEFT_SHIFT    &trans             &trans        &kp LG(DOWN_ARROW)  &trans                 &trans           &kp LC(T)           &kp LC(PAGE_DOWN)  &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN
+&kp LCTRL         &trans                                               &trans                 &trans           &trans              &trans             &trans               &trans          &trans           &kp END
             >;
 
             sensor-bindings =
