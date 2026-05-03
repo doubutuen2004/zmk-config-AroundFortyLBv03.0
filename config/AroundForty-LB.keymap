@@ -90,6 +90,30 @@
             key-positions = <3 2>;
             layers = <5>;
         };
+
+        Win_Close_Window {
+            bindings = <&kp LC(W)>;
+            key-positions = <0 1>;
+            layers = <3 4>;
+        };
+
+        iOS_Close_Window {
+            bindings = <&kp LG(W)>;
+            key-positions = <0 1>;
+            layers = <5>;
+        };
+
+        Win_Quit_App {
+            bindings = <&kp LC(Q)>;
+            key-positions = <20 21>;
+            layers = <3 4>;
+        };
+
+        iOS_Quit_App {
+            bindings = <&kp LG(Q)>;
+            key-positions = <20 21>;
+            layers = <5>;
+        };
     };
 
     //マクロ(既存のキーの組み合わせ)
