@@ -136,7 +136,7 @@
                 <&macro_press>,
                 <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>,
                 <&macro_tap>,
-                <&kp LA(RIGHT)>,
+                <&kp LC(RIGHT)>,
                 <&macro_release>,
                 <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
 
@@ -150,7 +150,7 @@
                 <&macro_press>,
                 <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>,
                 <&macro_tap>,
-                <&kp LA(LEFT)>,
+                <&kp LC(LEFT)>,
                 <&macro_release>,
                 <&kp C_AC_NEXT_KEYBOARD_LAYOUT_SELECT>;
 
@@ -257,10 +257,10 @@
 
         iOS {
             bindings = <
-&kp Z     &kp X             &kp E  &kp R  &kp T          &kp Y          &kp U            &kp I        &kp L      &kp P
-&mkp MB1  &Scroll_Tap 10 S  &kp D  &kp F  &kp G          &kp H          &kp J            &kp K        &kp O      &Jap_Eng
-&kp A     &kp X             &kp C  &kp V  &kp B          &Back_Forward  &trans           &kp N        &kp M      &kp MINUS            &kp COMMA                      &kp PERIOD
-&kp Q     &trans                          &lt 5 ENTER    &kp ENTER      &kp RIGHT_SHIFT  &lt 6 SPACE  &kp RCTRL  &mt RIGHT_ALT SLASH  &mt RIGHT_COMMAND EXCLAMATION  &mt C_AC_NEXT_KEYBOARD_LAYOUT_SELECT QUESTION
+&kp Z     &kp X             &kp E  &kp R  &kp T          &kp Y          &kp U            &kp I        &kp L          &kp P
+&mkp MB1  &Scroll_Tap 10 S  &kp D  &kp F  &kp G          &kp H          &kp J            &kp K        &kp O          &Jap_Eng
+&kp A     &kp X             &kp C  &kp V  &kp B          &Back_Forward  &trans           &kp N        &kp M          &kp MINUS            &kp COMMA              &kp PERIOD
+&kp Q     &trans                          &lt 5 ENTER    &kp ENTER      &kp RIGHT_SHIFT  &lt 6 SPACE  &kp RIGHT_GUI  &mt RIGHT_ALT SLASH  &mt RCTRL EXCLAMATION  &mt C_AC_NEXT_KEYBOARD_LAYOUT_SELECT QUESTION
             >;
 
             sensor-bindings =
