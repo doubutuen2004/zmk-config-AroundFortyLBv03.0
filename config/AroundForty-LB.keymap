@@ -188,7 +188,8 @@
                 <&macro_release>,
                 <&kp LEFT_GUI>,
                 <&macro_press>,
-                <&kp U>;
+                <&kp U>,
+                <&macro_release>;
 
             label = "WIN_SLEEP_OFF";
         };
@@ -272,6 +273,13 @@
             #binding-cells = <0>;
             bindings = <&kp RG(V)>, <&kp RS(RG(V))>;
         };
+
+        iOS_Back_Forward: iOS_Back_Forward {
+            compatible = "zmk,behavior-tap-dance";
+            label = "IOS_BACK_FORWARD";
+            #binding-cells = <0>;
+            bindings = <&kp LG(Z)>, <&kp LC(LG(Z))>;
+        };
     };
 
     //キーマップ設定
@@ -307,10 +315,10 @@
 
         iOS {
             bindings = <
-&kp Z     &kp W             &kp E  &kp R  &kp T          &kp Y          &kp U            &kp I        &kp L          &kp P
-&mkp MB1  &Scroll_Tap 10 S  &kp D  &kp F  &kp G          &kp H          &kp J            &kp K        &kp O          &Jap_Eng
-&kp A     &kp X             &kp C  &kp V  &kp B          &Back_Forward  &trans           &kp N        &kp M          &kp MINUS            &kp COMMA              &kp PERIOD
-&kp Q     &trans                          &lt 5 ENTER    &kp BACKSPACE  &kp RIGHT_SHIFT  &lt 6 SPACE  &kp RIGHT_GUI  &mt RIGHT_ALT SLASH  &mt RCTRL EXCLAMATION  &mt C_AC_NEXT_KEYBOARD_LAYOUT_SELECT QUESTION
+&kp Z     &kp W             &kp E  &kp R  &kp T          &kp Y              &kp U            &kp I        &kp L          &kp P
+&mkp MB1  &Scroll_Tap 10 S  &kp D  &kp F  &kp G          &kp H              &kp J            &kp K        &kp O          &Jap_Eng
+&kp A     &kp X             &kp C  &kp V  &kp B          &iOS_Back_Forward  &trans           &kp N        &kp M          &kp MINUS            &kp COMMA              &kp PERIOD
+&kp Q     &trans                          &lt 5 ENTER    &kp BACKSPACE      &kp RIGHT_SHIFT  &lt 6 SPACE  &kp RIGHT_GUI  &mt RIGHT_ALT SLASH  &mt RCTRL EXCLAMATION  &mt C_AC_NEXT_KEYBOARD_LAYOUT_SELECT QUESTION
             >;
 
             sensor-bindings =
@@ -321,8 +329,8 @@
         Win_US_Screen-Edit {
             bindings = <
 &kp LG(LEFT_ARROW)  &kp LG(RIGHT)      &kp LG(UP_ARROW)  &kp LG(TAB)  &kp LC(T)    &kp LESS_THAN         &kp GREATER_THAN       &kp CARET         &kp PERCENT        &kp DOLLAR
-&trans              &kp LEFT_ARROW     &kp LEFT_ALT      &kp TAB      &trans       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT_SIGN       &kp AMPERSAND      &kp DOUBLE_QUOTES
-&kp LA(LEFT)        &kp LA(RIGHT)      &kp LC(LS(TAB))   &kp LC(TAB)  &trans       &trans                &kp NON_US_BACKSLASH   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EXCLAMATION    &kp QUESTION  &kp SINGLE_QUOTE
+&trans              &kp LEFT_ARROW     &kp LEFT_ALT      &kp TAB      &kp LC(S)    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT_SIGN       &kp AMPERSAND      &kp DOUBLE_QUOTES
+&kp LA(LEFT)        &kp LA(RIGHT)      &kp LC(LS(TAB))   &kp LC(TAB)  &kp F5       &kp LC(W)             &kp NON_US_BACKSLASH   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EXCLAMATION    &kp QUESTION  &kp SINGLE_QUOTE
 &kp LC(PAGE_UP)     &kp LC(PAGE_DOWN)                                 &trans       &Win_Sleep_Off        &kp BACKSPACE          &Win_Copy_Paste   &Paste_Value       &kp RG(V)          &trans        &kp HASH
             >;
 
@@ -348,8 +356,8 @@
             bindings = <
 &iOS_Screen_Left      &iOS_Screen_Right      &iOS_Fullscreen  &iOS_Controlmi  &kp LG(T)    &kp LC(W)        &kp LA(LEFT_ARROW)  &mkp MB3           &kp LA(RIGHT_ARROW)  &kp HOME
 &trans                &kp LEFT               &kp LEFT_GUI     &kp TAB         &trans       &kp LC(PAGE_UP)  &mkp MB1            &kp UP_ARROW       &mkp MB2             &kp PAGE_UP
-&kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LC(LS(TAB))  &kp LC(TAB)     &trans       &trans           &kp LC(T)           &kp LC(PAGE_DOWN)  &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN
-&kp LC(PAGE_UP)       &kp LC(PAGE_DOWN)                                       &trans       &trans           &trans              &iOS_Copy_Cut      &iOS_Paste_Value     &trans          &trans           &kp END
+&kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LC(LS(TAB))  &kp LC(TAB)     &kp LG(R)    &kp LG(W)        &kp LC(T)           &kp LC(PAGE_DOWN)  &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN
+&trans                &trans                                                  &trans       &trans           &trans              &iOS_Copy_Cut      &iOS_Paste_Value     &trans          &trans           &kp END
             >;
 
             sensor-bindings =
@@ -397,10 +405,10 @@
 
         Scroll {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &Win_Sleep_Off    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
