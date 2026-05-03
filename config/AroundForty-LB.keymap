@@ -187,9 +187,8 @@
                 <&kp X>,
                 <&macro_release>,
                 <&kp LEFT_GUI>,
-                <&macro_press>,
-                <&kp U>,
-                <&macro_release>;
+                <&macro_tap>,
+                <&kp U>;
 
             label = "WIN_SLEEP_OFF";
         };
