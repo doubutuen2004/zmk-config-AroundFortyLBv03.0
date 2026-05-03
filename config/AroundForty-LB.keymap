@@ -63,6 +63,21 @@
             bindings = <&kp TAB>;
             key-positions = <30 29>;
         };
+
+        Delete {
+            bindings = <&kp DELETE>;
+            key-positions = <22 23>;
+        };
+
+        KATAKANA {
+            bindings = <&kp F7>;
+            key-positions = <6 7>;
+        };
+
+        Num_Toggle {
+            bindings = <&tog 7>;
+            key-positions = <25 20>;
+        };
     };
 
     //マクロ(既存のキーの組み合わせ)
