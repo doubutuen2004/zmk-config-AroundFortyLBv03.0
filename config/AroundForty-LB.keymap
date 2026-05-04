@@ -123,7 +123,7 @@
         Password: Password {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp N2 &kp N1 &kp N3 &kp N0 &kp A &kp G &kp LS(U) &kp N1 &kp N2 &kp N3>;
+            bindings = <&kp N2 &kp N1 &kp N3 &kp N0 &kp A &kp G &kp LS(U) &kp N1 &kp N2 &kp N3>;
             label = "PASSWORD";
         };
 
