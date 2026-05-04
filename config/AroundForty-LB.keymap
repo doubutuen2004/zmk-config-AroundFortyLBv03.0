@@ -19,11 +19,6 @@
     combos {
         compatible = "zmk,combos";
 
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <28 29>;
-        };
-
         muhennkann {
             bindings = <&to_layer_0 INT_MUHENKAN>;
             key-positions = <24 25>;
@@ -37,31 +32,6 @@
         Setting {
             bindings = <&mo 9>;
             key-positions = <10 34>;
-        };
-
-        Up {
-            bindings = <&kp UP_ARROW>;
-            key-positions = <7 8>;
-        };
-
-        Down {
-            bindings = <&kp DOWN>;
-            key-positions = <17 18>;
-        };
-
-        Left {
-            bindings = <&kp LEFT>;
-            key-positions = <16 17>;
-        };
-
-        Right {
-            bindings = <&kp RIGHT>;
-            key-positions = <19 18>;
-        };
-
-        Tab {
-            bindings = <&kp TAB>;
-            key-positions = <30 29>;
         };
 
         Delete {
@@ -352,7 +322,7 @@
         Win_US_Screen-Edit {
             bindings = <
 &kp LG(LEFT_ARROW)  &kp LG(RIGHT)      &kp LG(UP_ARROW)  &kp LG(TAB)  &Win_Copy_Cut       &kp RC(B)  &kp RC(U)              &kp UP_ARROW              &kp CAPSLOCK      &kp INSERT
-&kp LG(LS(LEFT))    &kp LEFT_ARROW     &kp LEFT_ALT      &kp TAB      &Win_Paste_Value    &kp RC(P)  &kp LEFT               &kp DOWN                  &kp RIGHT         &kp LC(F)
+&kp LG(LS(LEFT))    &kp LS(TAB)        &kp LEFT_ALT      &kp TAB      &Win_Paste_Value    &kp RC(P)  &kp LEFT               &kp DOWN                  &kp RIGHT         &kp LC(F)
 &kp LA(LEFT)        &kp LA(RIGHT)      &kp LC(LS(TAB))   &kp LC(TAB)  &kp LG(V)           &kp F5     &kp RS(RC(LESS_THAN))  &kp RS(RC(GREATER_THAN))  &kp RS(RA(LEFT))  &kp RS(RA(RIGHT))  &kp RA(LEFT)  &kp RA(RIGHT)
 &kp LC(PAGE_UP)     &kp LC(PAGE_DOWN)                                 &trans              &kp LC(S)  &kp LS(LG(S))          &kp RC(A)                 &kp RS(HOME)      &kp RS(END)        &kp HOME      &kp END
             >;
@@ -378,7 +348,7 @@
         iOS_Screen-Edit {
             bindings = <
 &iOS_Screen_Left      &iOS_Screen_Right      &iOS_Fullscreen  &iOS_Controlmi  &iOS_Copy_Cut       &kp LG(B)  &kp LG(U)             &kp UP_ARROW   &kp CAPSLOCK      &kp INSERT
-&kp LG(H)             &kp LEFT               &kp LEFT_GUI     &kp TAB         &iOS_Paste_Value    &trans     &kp LEFT              &kp DOWN       &kp RIGHT         &kp LG(F)
+&kp LG(H)             &kp LS(TAB)            &kp LEFT_GUI     &kp TAB         &iOS_Paste_Value    &trans     &kp LEFT              &kp DOWN       &kp RIGHT         &kp LG(F)
 &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LC(LS(TAB))  &kp LC(TAB)     &kp P               &kp E      &kp LG(PLUS)          &kp LG(MINUS)  &kp LS(LA(LEFT))  &kp LS(LA(RIGHT))  &kp LA(LEFT)  &kp LA(RIGHT)
 &kp H                 &kp L                                                   &trans              &kp LG(R)  &kp LS(LG(NUMBER_3))  &kp LG(A)      &kp LS(LG(LEFT))  &kp LS(LG(RIGHT))  &kp LG(LEFT)  &kp LG(RIGHT)
             >;
