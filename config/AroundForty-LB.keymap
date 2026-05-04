@@ -306,7 +306,7 @@
 &kp Z             &kp W      &kp E  &kp R  &kp T          &kp Y              &kp U            &kp I        &kp O      &kp P
 &Scroll_Tap 10 A  &kp S      &kp D  &kp F  &kp G          &kp H              &kp J            &kp K        &kp L      &Jap_Eng
 &mkp MB1          &kp X      &kp C  &kp V  &kp B          &Win_Back_Forward  &trans           &kp N        &kp M      &kp MINUS            &kp COMMA          &kp PERIOD
-&kp Q             &Password                &lt 3 SPACE    &kp BACKSPACE      &kp RIGHT_SHIFT  &lt 0 SPACE  &kp RCTRL  &mt RIGHT_ALT SLASH  &mt LEFT_GUI EXCL  &kp QUESTION
+&kp Q             &Password                &lt 3 SPACE    &kp BACKSPACE      &kp RIGHT_SHIFT  &lt 7 SPACE  &kp RCTRL  &mt RIGHT_ALT SLASH  &mt LEFT_GUI EXCL  &kp QUESTION
             >;
 
             sensor-bindings =
@@ -368,10 +368,10 @@
 
         Num-Symbol_US {
             bindings = <
-&kp PERCENT        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &kp PLUS           &kp MINUS      &kp N7        &kp N8     &kp N9
-&Scroll_Tap 10 N0  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PERIOD    &kp EQUAL          &kp COLON      &kp N4        &kp N5     &Jap_Eng
-&mkp MB1           &kp N7        &kp N8        &kp N9        &kp COLON     &Win_Back_Forward  &kp AMPERSAND  &kp ASTERISK  &kp SLASH  &kp N1    &kp N2         &kp N3
-&kp TILDE          &trans                                    &kp ENTER     &kp BACKSPACE      &kp BACKSPACE  &kp RET       &trans     &trans    &kp AMPERSAND  &kp UNDERSCORE
+&kp PERCENT        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &kp DOLLAR         &kp SINGLE_QUOTE      &kp DOUBLE_QUOTES      &kp SEMICOLON     &kp ASTERISK
+&Scroll_Tap 10 N0  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PERIOD    &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PLUS          &Jap_Eng
+&mkp MB1           &kp N7        &kp N8        &kp N9        &kp COLON     &Win_Back_Forward  &trans                &kp AT_SIGN            &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH  &kp EQUAL
+&kp TILDE          &trans                                    &kp ENTER     &kp BACKSPACE      &trans                &trans                 &kp LESS_THAN     &kp GREATER_THAN   &kp MINUS  &kp UNDERSCORE
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -379,10 +379,10 @@
 
         Num-Symbol_JIS {
             bindings = <
-&kp PERCENT        &kp N1  &kp N2  &kp N3  &kp SLASH     &trans             &trans  &trans  &trans  &trans
-&Scroll_Tap 10 N0  &kp N4  &kp N5  &kp N6  &kp PERIOD    &trans             &trans  &trans  &trans  &trans
-&mkp MB1           &kp N7  &kp N8  &kp N9  &kp COLON     &Win_Back_Forward  &trans  &trans  &trans  &trans  &trans  &trans
-&trans             &trans                  &kp ENTER     &kp BACKSPACE      &trans  &trans  &trans  &trans  &trans  &trans
+&kp PERCENT        &kp N1  &kp N2  &kp N3  &kp SLASH            &kp DOLLAR         &kp SQT     &kp RS(COMMA)     &kp SEMICOLON     &kp RS(N8)
+&Scroll_Tap 10 N0  &kp N4  &kp N5  &kp N6  &kp PERIOD           &kp RS(N7)         &kp RS(N9)  &kp RS(N0)        &kp RS(EQUAL)     &Jap_Eng
+&mkp MB1           &kp N7  &kp N8  &kp N9  &kp RS(SEMICOLON)    &Win_Back_Forward  &trans      &kp RS(NUMBER_2)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH  &kp EQUAL
+&kp LS(GRAVE)      &trans                  &kp ENTER            &kp BACKSPACE      &trans      &trans            &kp RS(COMMA)     &kp RS(PERIOD)     &kp MINUS  &kp RS(MINUS)
             >;
         };
 
