@@ -206,6 +206,13 @@
 
             label = "IOS_SCREEN_LEFT";
         };
+
+        Win_Sleep_Off: Win_Sleep_Off {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(X) &kp U>;
+            label = "WIN_SLEEP_OFF";
+        };
     };
 
     //新たな動作を定義する
