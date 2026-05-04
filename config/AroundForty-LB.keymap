@@ -250,6 +250,8 @@
             label = "JAP_ENG";
             #binding-cells = <0>;
             bindings = <&kp LANGUAGE_2>, <&kp LANGUAGE_1>;
+
+            tapping-term-ms = <250>;
         };
 
         Win_Back_Forward: Win_Back_Forward {
