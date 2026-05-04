@@ -252,9 +252,9 @@
             bindings = <&kp LANGUAGE_2>, <&kp LANGUAGE_1>;
         };
 
-        Back_Forward: Back_Forward {
+        Win_Back_Forward: Win_Back_Forward {
             compatible = "zmk,behavior-tap-dance";
-            label = "BACK_FORWARD";
+            label = "WIN_BACK_FORWARD";
             #binding-cells = <0>;
             bindings = <&kp LC(Z)>, <&kp LS(LC(Z))>;
         };
@@ -309,10 +309,10 @@
 
         Win_US {
             bindings = <
-&kp Z             &kp W         &kp E  &kp R  &kp T          &kp Y          &kp U            &kp I        &kp L      &kp P
-&Scroll_Tap 10 A  &kp S         &kp D  &kp F  &kp G          &kp H          &kp J            &kp K        &kp O      &Jap_Eng
-&mkp MB1          &kp X         &kp C  &kp V  &kp B          &Back_Forward  &trans           &kp N        &kp M      &kp MINUS            &kp COMMA           &kp PERIOD
-&kp Q             &Voice_Input                &lt 3 ENTER    &kp BACKSPACE  &kp RIGHT_SHIFT  &lt 6 SPACE  &kp RCTRL  &mt RIGHT_ALT SLASH  &mt RIGHT_GUI EXCL  &kp QUESTION
+&kp Z             &kp W         &kp E  &kp R  &kp T          &kp Y              &kp U            &kp I        &kp L      &kp P
+&Scroll_Tap 10 A  &kp S         &kp D  &kp F  &kp G          &kp H              &kp J            &kp K        &kp O      &Jap_Eng
+&mkp MB1          &kp X         &kp C  &kp V  &kp B          &Win_Back_Forward  &trans           &kp N        &kp M      &kp MINUS            &kp COMMA           &kp PERIOD
+&kp Q             &Voice_Input                &lt 3 ENTER    &kp BACKSPACE      &kp RIGHT_SHIFT  &lt 6 SPACE  &kp RCTRL  &mt RIGHT_ALT SLASH  &mt RIGHT_GUI EXCL  &kp QUESTION
             >;
 
             sensor-bindings =
@@ -387,10 +387,10 @@
 
         Num-Symbol_US {
             bindings = <
-&trans             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp F5                     &kp PLUS   &kp MINUS      &kp N7        &kp N8     &kp N9
-&Scroll_Tap 10 N0  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp F10                    &kp EQUAL  &kp COLON      &kp N4        &kp N5     &kp N6
-&mkp MB1           &kp N7        &kp N8        &kp N9        &kp LG(LS(RIGHT_ARROW))    &trans     &kp AMPERSAND  &kp ASTERISK  &kp SLASH  &kp N1  &kp N2         &kp N3
-&trans             &trans                                    &trans                     &trans     &kp BACKSPACE  &kp RET       &trans     &trans  &kp AMPERSAND  &kp UNDERSCORE
+&kp PERCENT        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &kp PLUS           &kp MINUS      &kp N7        &kp N8     &kp N9
+&Scroll_Tap 10 N0  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PERIOD    &kp EQUAL          &kp COLON      &kp N4        &kp N5     &Jap_Eng
+&mkp MB1           &kp N7        &kp N8        &kp N9        &kp COLON     &Win_Back_Forward  &kp AMPERSAND  &kp ASTERISK  &kp SLASH  &kp N1    &kp N2         &kp N3
+&kp TILDE          &trans                                    &kp ENTER     &kp BACKSPACE      &kp BACKSPACE  &kp RET       &trans     &trans    &kp AMPERSAND  &kp UNDERSCORE
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
