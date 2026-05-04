@@ -348,10 +348,10 @@
 
         Win_US_Screen-Edit {
             bindings = <
-&kp LG(LEFT_ARROW)  &kp LG(RIGHT)      &kp LG(UP_ARROW)  &kp LG(TAB)  &Win_Copy_Cut       &kp LESS_THAN         &kp GREATER_THAN       &kp CARET         &kp PERCENT        &kp DOLLAR
-&kp LG(LS(LEFT))    &kp LEFT_ARROW     &kp LEFT_ALT      &kp TAB      &Win_Paste_Value    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT_SIGN       &kp AMPERSAND      &kp DOUBLE_QUOTES
-&kp LA(LEFT)        &kp LA(RIGHT)      &kp LC(LS(TAB))   &kp LC(TAB)  &kp LG(V)           &kp F5                &kp NON_US_BACKSLASH   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EXCLAMATION    &kp QUESTION  &kp SINGLE_QUOTE
-&kp LC(PAGE_UP)     &kp LC(PAGE_DOWN)                                 &trans              &kp LC(S)             &Win_Sleep_Off         &kp RC(A)         &kp RS(HOME)       &kp RS(END)        &kp HOME      &kp END
+&kp LG(LEFT_ARROW)  &kp LG(RIGHT)      &kp LG(UP_ARROW)  &kp LG(TAB)  &Win_Copy_Cut       &kp LESS_THAN  &kp GREATER_THAN       &kp CARET                 &kp PERCENT       &kp DOLLAR
+&kp LG(LS(LEFT))    &kp LEFT_ARROW     &kp LEFT_ALT      &kp TAB      &Win_Paste_Value    &kp RC(P)      &kp LEFT               &kp DOWN                  &kp RIGHT         &kp DOUBLE_QUOTES
+&kp LA(LEFT)        &kp LA(RIGHT)      &kp LC(LS(TAB))   &kp LC(TAB)  &kp LG(V)           &kp F5         &kp RS(RC(LESS_THAN))  &kp RS(RC(GREATER_THAN))  &kp RS(RA(LEFT))  &kp RS(RA(RIGHT))  &kp RA(LEFT)  &kp RA(RIGHT)
+&kp LC(PAGE_UP)     &kp LC(PAGE_DOWN)                                 &trans              &kp LC(S)      &Win_Sleep_Off         &kp RC(A)                 &kp RS(HOME)      &kp RS(END)        &kp HOME      &kp END
             >;
 
             sensor-bindings =
