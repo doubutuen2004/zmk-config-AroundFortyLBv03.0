@@ -348,10 +348,10 @@
 
         Win_US_Screen-Edit {
             bindings = <
-&kp LG(LEFT_ARROW)  &kp LG(RIGHT)      &kp LG(UP_ARROW)  &kp LG(TAB)  &Win_Copy_Cut       &kp LESS_THAN  &kp GREATER_THAN       &kp CARET                 &kp PERCENT       &kp DOLLAR
-&kp LG(LS(LEFT))    &kp LEFT_ARROW     &kp LEFT_ALT      &kp TAB      &Win_Paste_Value    &kp RC(P)      &kp LEFT               &kp DOWN                  &kp RIGHT         &kp DOUBLE_QUOTES
-&kp LA(LEFT)        &kp LA(RIGHT)      &kp LC(LS(TAB))   &kp LC(TAB)  &kp LG(V)           &kp F5         &kp RS(RC(LESS_THAN))  &kp RS(RC(GREATER_THAN))  &kp RS(RA(LEFT))  &kp RS(RA(RIGHT))  &kp RA(LEFT)  &kp RA(RIGHT)
-&kp LC(PAGE_UP)     &kp LC(PAGE_DOWN)                                 &trans              &kp LC(S)      &Win_Sleep_Off         &kp RC(A)                 &kp RS(HOME)      &kp RS(END)        &kp HOME      &kp END
+&kp LG(LEFT_ARROW)  &kp LG(RIGHT)      &kp LG(UP_ARROW)  &kp LG(TAB)  &Win_Copy_Cut       &kp RC(B)  &kp RC(U)              &kp UP_ARROW              &kp LS(LG(S))     &kp CAPS
+&kp LG(LS(LEFT))    &kp LEFT_ARROW     &kp LEFT_ALT      &kp TAB      &Win_Paste_Value    &kp RC(P)  &kp LEFT               &kp DOWN                  &kp RIGHT         &kp LC(F)
+&kp LA(LEFT)        &kp LA(RIGHT)      &kp LC(LS(TAB))   &kp LC(TAB)  &kp LG(V)           &kp F5     &kp RS(RC(LESS_THAN))  &kp RS(RC(GREATER_THAN))  &kp RS(RA(LEFT))  &kp RS(RA(RIGHT))  &kp RA(LEFT)  &kp RA(RIGHT)
+&kp LC(PAGE_UP)     &kp LC(PAGE_DOWN)                                 &trans              &kp LC(S)  &Win_Sleep_Off         &kp RC(A)                 &kp RS(HOME)      &kp RS(END)        &kp HOME      &kp END
             >;
 
             sensor-bindings =
@@ -387,10 +387,10 @@
 
         Num-Symbol_US {
             bindings = <
-&trans   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp F5                     &kp PLUS   &kp MINUS      &kp N7        &kp N8     &kp N9
-&kp N0   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp F10                    &kp EQUAL  &kp COLON      &kp N4        &kp N5     &kp N6
-&kp F11  &kp N7        &kp N8        &kp N9        &kp LG(LS(RIGHT_ARROW))    &trans     &kp AMPERSAND  &kp ASTERISK  &kp SLASH  &kp N1  &kp N2         &kp N3
-&trans   &trans                                    &trans                     &trans     &kp BACKSPACE  &kp RET       &trans     &trans  &kp AMPERSAND  &kp BSPC
+&trans             &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp F5                     &kp PLUS   &kp MINUS      &kp N7        &kp N8     &kp N9
+&Scroll_Tap 10 N0  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp F10                    &kp EQUAL  &kp COLON      &kp N4        &kp N5     &kp N6
+&mkp MB1           &kp N7        &kp N8        &kp N9        &kp LG(LS(RIGHT_ARROW))    &trans     &kp AMPERSAND  &kp ASTERISK  &kp SLASH  &kp N1  &kp N2         &kp N3
+&trans             &trans                                    &trans                     &trans     &kp BACKSPACE  &kp RET       &trans     &trans  &kp AMPERSAND  &kp UNDERSCORE
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -425,10 +425,10 @@
 
         Scroll {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp INSERT    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                  &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
