@@ -119,7 +119,7 @@
             label = "BT0_LAYER0";
         };
 
-        BT0_Layer1: BT0_Layer1 {
+        BT1_Layer1: BT0_Layer1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 1>, <&macro_wait_time 200>, <&to 1>;
@@ -127,7 +127,7 @@
             label = "BT0_LAYER1";
         };
 
-        BT0_Layer2: BT0_Layer2 {
+        BT2_Layer2: BT0_Layer2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 2>, <&macro_wait_time 200>, <&to 2>;
@@ -183,6 +183,14 @@
             bindings = <&kp LG(X)>, <&macro_wait_time 200>, <&kp U>;
 
             label = "WIN_SLEEP_OFF";
+        };
+
+        BT3_Layer2: BT3_Layer2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 3>, <&macro_wait_time 200>, <&to 2>;
+
+            label = "BT3_LAYER2";
         };
     };
 
@@ -334,7 +342,7 @@
 
         Win_JIS_Screen-Edit {
             bindings = <
-&kp ESCAPE      &trans        &trans       &trans              &trans                 &kp LG(W)    &kp LG(LEFT_ARROW)  &mkp MB3         &kp LG(RIGHT_ARROW)  &kp HOME
+&kp ESCAPE      &trans        &trans       &trans              &trans                 &kp LG(W)    &kp LG(LEFT_ARROW)  &mkp MB3         &kp LG(RIGHT_ARROW)  &kp INSERT
 &kp TAB         &kp LEFT_GUI  &kp LS(TAB)  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)    &kp LG(TAB)  &mkp MB1            &kp UP_ARROW     &mkp MB2             &kp PAGE_UP
 &kp LEFT_SHIFT  &trans        &trans       &kp LG(DOWN_ARROW)  &trans                 &trans       &kp LG(T)           &kp LS(LG(TAB))  &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN
 &kp LCTRL       &trans                                         &trans                 &trans       &trans              &trans           &trans               &trans          &trans           &kp END
@@ -389,19 +397,19 @@
 
         Setting {
             bindings = <
-&trans  &trans  &trans       &trans       &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &BT0_Layer2  &BT0_Layer0  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans       &BT0_Layer1  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                            &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &trans       &trans       &trans    &bt BT_CLR  &trans          &trans  &trans  &bt BT_CLR_ALL
+&trans  &BT2_Layer2  &BT1_Layer1  &BT0_Layer0  &trans    &trans      &trans          &trans  &trans  &trans
+&trans  &trans       &trans       &BT3_Layer2  &trans    &trans      &studio_unlock  &trans  &trans  &trans          &trans      &trans
+&trans  &trans                                 &trans    &trans      &trans          &trans  &trans  &trans          &sys_reset  &bootloader
             >;
         };
 
         Scroll {
             bindings = <
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &Win_Sleep_Off    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans          &kp LG(PLUS)   &trans    &trans  &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC  &trans      &trans
+&trans  &kp LCTRL  &Win_Sleep_Off  &kp LG(MINUS)  &trans    &trans  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &trans      &trans
+&trans  &trans     &kp ESCAPE      &kp LG(N0)     &trans    &trans  &trans             &trans                &kp C_MUTE  &trans  &trans  &trans
+&trans  &trans                                    &trans    &trans  &trans             &trans                &trans      &trans  &trans  &trans
             >;
         };
     };
