@@ -383,8 +383,8 @@
             bindings = <
 &iOS_Screen_Left      &iOS_Screen_Right      &iOS_Fullscreen  &iOS_Controlmi  &iOS_Copy_Cut       &kp LC(W)        &kp LA(LEFT_ARROW)  &mkp MB3           &kp LA(RIGHT_ARROW)  &kp HOME
 &kp LG(H)             &kp LEFT               &kp LEFT_GUI     &kp TAB         &iOS_Paste_Value    &kp LC(PAGE_UP)  &mkp MB1            &kp UP_ARROW       &mkp MB2             &kp PAGE_UP
-&kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LC(LS(TAB))  &kp LC(TAB)     &kp LG(P)           &kp LG(E)        &kp LC(T)           &kp LC(PAGE_DOWN)  &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN
-&kp LG(H)             &kp LG(L)                                               &trans              &kp LG(R)        &trans              &iOS_Copy_Cut      &iOS_Paste_Value     &trans          &trans           &kp END
+&kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LC(LS(TAB))  &kp LC(TAB)     &kp P               &kp E            &kp LC(T)           &kp LC(PAGE_DOWN)  &kp LEFT_ARROW       &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp PAGE_DOWN
+&kp H                 &kp L                                                   &trans              &kp LG(R)        &trans              &iOS_Copy_Cut      &iOS_Paste_Value     &trans          &trans           &kp END
             >;
 
             sensor-bindings =
