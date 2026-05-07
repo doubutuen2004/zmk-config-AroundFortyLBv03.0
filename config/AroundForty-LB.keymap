@@ -303,8 +303,8 @@
 
         Win_JIS {
             bindings = <
-&kp Z            &kp W      &kp E  &kp R  &kp T          &kp Y              &kp U            &kp I        &kp O      &kp P
-&Scroll_Tap 8 A  &kp S      &kp D  &kp F  &kp G          &kp H              &kp J            &kp K        &kp L      &Jap_Eng
+&kp Z            &kp W      &kp E  &kp R  &kp T          &kp Y              &kp U            &kp I        &kp L      &kp P
+&Scroll_Tap 8 A  &kp S      &kp D  &kp F  &kp G          &kp H              &kp J            &kp K        &kp O      &Jap_Eng
 &mkp MB1         &kp X      &kp C  &kp V  &kp B          &Win_Back_Forward  &trans           &kp N        &kp M      &kp MINUS            &kp COMMA          &kp PERIOD
 &kp Q            &Password                &lt 3 ENTER    &kp BACKSPACE      &kp RIGHT_SHIFT  &lt 7 SPACE  &kp RCTRL  &mt RIGHT_ALT SLASH  &mt LEFT_GUI EXCL  &kp QUESTION
             >;
@@ -332,7 +332,7 @@
 &kp LG(LEFT_ARROW)  &kp LG(RIGHT)      &kp LG(UP_ARROW)  &kp LG(TAB)  &Win_Copy_Cut       &kp RC(B)  &kp RC(U)              &kp UP_ARROW              &kp CAPSLOCK      &kp INSERT
 &kp LG(LS(LEFT))    &kp LS(TAB)        &kp LEFT_ALT      &kp TAB      &Win_Paste_Value    &kp RC(P)  &kp LEFT               &kp DOWN                  &kp RIGHT         &kp LC(F)
 &kp LA(LEFT)        &kp LA(RIGHT)      &kp LC(LS(TAB))   &kp LC(TAB)  &kp LG(V)           &kp LC(S)  &kp RS(RC(LESS_THAN))  &kp RS(RC(GREATER_THAN))  &kp RS(RA(LEFT))  &kp RS(RA(RIGHT))  &kp RA(LEFT)  &kp RA(RIGHT)
-&kp LC(PAGE_UP)     &kp LC(PAGE_DOWN)                                 &trans              &kp F5     &kp LS(LG(S))          &kp RC(A)                 &kp RS(HOME)      &kp RS(END)        &kp HOME      &kp END
+&kp LC(PAGE_UP)     &kp LC(PAGE_DOWN)                                 &trans              &kp F5     &kp RIGHT_SHIFT        &kp RC(A)                 &kp RS(HOME)      &kp RS(END)        &kp HOME      &kp END
             >;
 
             sensor-bindings =
@@ -345,7 +345,7 @@
 &kp LG(LEFT)      &kp LG(RIGHT)      &kp LG(UP_ARROW)  &kp LG(TAB)  &Win_Copy_Cut       &kp LC(B)  &kp LC(B)          &kp UP_ARROW        &kp CAPSLOCK      &kp INSERT
 &kp LG(LS(LEFT))  &kp LS(TAB)        &kp LS(LEFT_ALT)  &kp TAB      &Win_Paste_Value    &kp LC(P)  &kp LEFT           &kp DOWN            &kp RIGHT         &kp LC(F)
 &kp LA(LEFT)      &kp LA(RIGHT)      &kp LS(LC(TAB))   &kp LC(TAB)  &kp LG(V)           &kp LC(S)  &kp RC(RS(COMMA))  &kp RC(RS(PERIOD))  &kp RS(RA(LEFT))  &kp RS(RA(RIGHT))  &kp RA(LEFT)  &kp RA(RIGHT)
-&kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)                                 &trans              &kp F5     &kp LG(LS(S))      &kp LC(A)           &kp RS(HOME)      &kp RS(END)        &kp HOME      &kp END
+&kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)                                 &trans              &kp F5     &kp RIGHT_SHIFT    &kp LC(A)           &kp RS(HOME)      &kp RS(END)        &kp HOME      &kp END
             >;
 
             sensor-bindings =
@@ -355,10 +355,10 @@
 
         iOS_Screen-Edit {
             bindings = <
-&iOS_Screen_Left      &iOS_Screen_Right      &iOS_Fullscreen  &iOS_Controlmi  &iOS_Copy_Cut       &kp LG(B)  &kp LG(U)             &kp UP_ARROW   &kp CAPSLOCK      &kp INSERT
-&kp LG(H)             &kp LS(TAB)            &kp LEFT_GUI     &kp TAB         &iOS_Paste_Value    &trans     &kp LEFT              &kp DOWN       &kp RIGHT         &kp LG(F)
-&kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LC(LS(TAB))  &kp LC(TAB)     &kp P               &kp E      &kp LG(PLUS)          &kp LG(MINUS)  &kp LS(LA(LEFT))  &kp LS(LA(RIGHT))  &kp LA(LEFT)  &kp LA(RIGHT)
-&kp H                 &kp L                                                   &trans              &kp LG(R)  &kp LS(LG(NUMBER_3))  &kp LG(A)      &kp LS(LG(LEFT))  &kp LS(LG(RIGHT))  &kp LG(LEFT)  &kp LG(RIGHT)
+&iOS_Screen_Left      &iOS_Screen_Right      &iOS_Fullscreen  &iOS_Controlmi  &iOS_Copy_Cut       &kp LG(B)  &kp LG(U)        &kp UP_ARROW   &kp CAPSLOCK      &kp INSERT
+&kp LG(H)             &kp LS(TAB)            &kp LEFT_GUI     &kp TAB         &iOS_Paste_Value    &trans     &kp LEFT         &kp DOWN       &kp RIGHT         &kp LG(F)
+&kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LC(LS(TAB))  &kp LC(TAB)     &kp P               &kp E      &kp LG(PLUS)     &kp LG(MINUS)  &kp LS(LA(LEFT))  &kp LS(LA(RIGHT))  &kp LA(LEFT)  &kp LA(RIGHT)
+&kp H                 &kp L                                                   &trans              &kp LG(R)  &kp RIGHT_SHIFT  &kp LG(A)      &kp LS(LG(LEFT))  &kp LS(LG(RIGHT))  &kp LG(LEFT)  &kp LG(RIGHT)
             >;
 
             sensor-bindings =
