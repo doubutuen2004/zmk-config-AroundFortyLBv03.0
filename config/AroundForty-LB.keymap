@@ -29,11 +29,6 @@
             key-positions = <11 12>;
         };
 
-        Setting {
-            bindings = <&mo 9>;
-            key-positions = <10 34>;
-        };
-
         Delete {
             bindings = <&kp DELETE>;
             key-positions = <22 23>;
@@ -411,7 +406,7 @@
 &trans  &kp INSERT  &trans          &kp LG(PLUS)   &trans    &trans  &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC  &trans      &trans
 &trans  &kp LCTRL   &Win_Sleep_Off  &kp LG(MINUS)  &trans    &trans  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &trans      &trans
 &trans  &kp ESCAPE  &trans          &kp LG(N0)     &trans    &trans  &trans             &trans                &kp C_MUTE  &trans  &trans  &trans
-&trans  &trans                                     &trans    &trans  &trans             &trans                &trans      &trans  &trans  &trans
+&trans  &trans                                     &mo 9     &trans  &trans             &trans                &trans      &trans  &trans  &trans
             >;
         };
 
