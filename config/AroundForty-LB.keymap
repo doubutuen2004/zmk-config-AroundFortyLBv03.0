@@ -379,10 +379,10 @@
 
         Num-Symbol_JIS {
             bindings = <
-&kp PERCENT       &kp N1  &kp N2  &kp N3  &kp SLASH         &kp DOLLAR         &kp RS(N7)  &kp RS(NUMBER_2)  &kp SEMICOLON      &kp DOUBLE_QUOTES
-&Scroll_Tap 8 N0  &kp N4  &kp N5  &kp N6  &kp PERIOD        &kp RS(NUMBER_6)   &kp RS(N8)  &kp RS(N9)        &kp RS(SEMICOLON)  &Jap_Eng
-&mkp MB1          &kp N7  &kp N8  &kp N9  &kp APOSTROPHE    &Win_Back_Forward  &trans      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RS(PIPE)       &kp SLASH  &kp RS(MINUS)
-&kp LS(EQUAL)     &trans                  &kp ENTER         &kp BACKSPACE      &trans      &trans            &kp RS(COMMA)      &kp RS(PERIOD)     &kp MINUS  &kp UNDER
+&kp PERCENT       &kp N1  &kp N2  &kp N3  &kp SLASH         &kp DOLLAR         &kp RS(N7)        &kp RS(NUMBER_2)  &kp SEMICOLON      &kp DOUBLE_QUOTES
+&Scroll_Tap 8 N0  &kp N4  &kp N5  &kp N6  &kp PERIOD        &kp RS(NUMBER_6)   &kp RS(N8)        &kp RS(N9)        &kp RS(SEMICOLON)  &Jap_Eng
+&mkp MB1          &kp N7  &kp N8  &kp N9  &kp APOSTROPHE    &Win_Back_Forward  &kp RS(EQUAL)     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp RS(PIPE)       &kp SLASH  &kp RS(MINUS)
+&kp LS(EQUAL)     &trans                  &kp ENTER         &kp BACKSPACE      &kp LS(NUMBER_4)  &trans            &kp RS(COMMA)      &kp RS(PERIOD)     &kp MINUS  &kp EQUAL
             >;
         };
 
