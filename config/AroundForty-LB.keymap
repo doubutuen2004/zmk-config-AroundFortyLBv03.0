@@ -37,6 +37,7 @@
         Delete {
             bindings = <&kp DELETE>;
             key-positions = <22 23>;
+            layers = <0 1 2 6 7>;
         };
 
         KATAKANA {
@@ -76,6 +77,12 @@
         Win_Quit_App {
             bindings = <&kp LC(Q)>;
             key-positions = <20 21>;
+            layers = <3 4>;
+        };
+
+        Win_Task-Bar {
+            bindings = <&kp LG(T)>;
+            key-positions = <22 23>;
             layers = <3 4>;
         };
     };
