@@ -112,12 +112,6 @@
             key-positions = <6 7>;
             layers = <0 1>;
         };
-
-        Win_Sleep-S {
-            bindings = <&kp S>;
-            key-positions = <8 7>;
-            layers = <0 1>;
-        };
     };
 
     //マクロ(既存のキーの組み合わせ)
