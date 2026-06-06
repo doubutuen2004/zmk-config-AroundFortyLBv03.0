@@ -38,6 +38,7 @@
         KATAKANA {
             bindings = <&kp F7>;
             key-positions = <2 3>;
+            layers = <0 1 2>;
         };
 
         Win-US_Num-Toggle {
@@ -97,11 +98,13 @@
         Escape {
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
+            layers = <0 1 2>;
         };
 
         Insert {
             bindings = <&kp INSERT>;
             key-positions = <20 21>;
+            layers = <0 1 2>;
         };
     };
 
