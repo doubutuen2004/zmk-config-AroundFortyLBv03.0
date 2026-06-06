@@ -221,9 +221,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&kp LEFT_GUI>,
-                <&macro_tap>,
-                <&kp X>,
+                <&kp LG(X)>,
                 <&macro_release>,
                 <&kp LEFT_GUI>,
                 <&macro_tap>,
