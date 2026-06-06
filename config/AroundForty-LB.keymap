@@ -106,6 +106,12 @@
             key-positions = <20 21>;
             layers = <0 1 2>;
         };
+
+        Win_Sleep-Off {
+            bindings = <&kp LG(X)>;
+            key-positions = <6 7>;
+            layers = <0 1>;
+        };
     };
 
     //マクロ(既存のキーの組み合わせ)
@@ -430,10 +436,10 @@
 
         Scroll {
             bindings = <
-&trans  &kp LG(PLUS)      &BT3_Layer2  &BT2_Layer2  &trans         &trans  &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC  &trans      &trans
-&trans  &mt LCTRL LG(N0)  &BT1_Layer1  &BT0_Layer0  &Win_Sleeep    &trans  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &trans      &trans
-&trans  &kp LG(MINUS)     &trans       &trans       &trans         &trans  &trans             &trans                &kp C_MUTE  &trans  &trans  &trans
-&trans  &trans                                      &mo 9          &trans  &trans             &trans                &trans      &trans  &trans  &trans
+&trans  &kp LG(PLUS)      &BT3_Layer2  &BT2_Layer2  &trans    &trans  &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC  &trans      &trans
+&trans  &mt LCTRL LG(N0)  &BT1_Layer1  &BT0_Layer0  &trans    &trans  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &trans      &trans
+&trans  &kp LG(MINUS)     &trans       &trans       &trans    &trans  &trans             &trans                &kp C_MUTE  &trans  &trans  &trans
+&trans  &trans                                      &mo 9     &trans  &trans             &trans                &trans      &trans  &trans  &trans
             >;
         };
 
