@@ -251,7 +251,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "WIN_BACK_FORWARD";
             #binding-cells = <0>;
-            bindings = <&kp LC(Z)>, <&kp LS(LC(Z))>;
+            bindings = <&kp LC(Z)>, <&kp LC(Y)>;
         };
 
         Voice_Input: Voice_Input {
