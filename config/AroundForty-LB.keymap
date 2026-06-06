@@ -306,7 +306,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "WIN_PASTE_VALUE";
             #binding-cells = <0>;
-            bindings = <&kp RC(V)>, <&kp RC(RS(V))>;
+            bindings = <&kp LC(LS(V))>, <&kp LC(V)>;
         };
 
         Win_Copy_Cut: Win_Copy_Cut {
@@ -320,7 +320,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "IOS_PASTE_VALUE";
             #binding-cells = <0>;
-            bindings = <&kp RG(V)>, <&kp RG(RS(V))>;
+            bindings = <&kp LG(LS(V))>, <&kp LG(V)>;
         };
 
         iOS_Back_Forward: iOS_Back_Forward {
