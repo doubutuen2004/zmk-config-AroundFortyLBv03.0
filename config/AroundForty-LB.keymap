@@ -206,6 +206,23 @@
 
             label = "BT3_LAYER2";
         };
+
+        Win_Sleeep: Win_Sleeep {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LEFT_GUI>,
+                <&macro_tap>,
+                <&kp X>,
+                <&macro_release>,
+                <&kp LEFT_GUI>,
+                <&macro_tap>,
+                <&kp U>,
+                <&macro_tap>,
+                <&kp S>;
+
+            label = "WIN_SLEEEP";
+        };
     };
 
     //新たな動作を定義する
@@ -306,7 +323,7 @@
             bindings = <
 &kp Z            &kp W         &kp E  &kp R  &kp T          &kp Y              &kp U            &kp I        &kp L      &kp P
 &Scroll_Tap 8 A  &kp S         &kp D  &kp F  &kp G          &kp H              &kp J            &kp K        &kp O      &Jap_Eng
-&mkp MB1         &kp X         &kp C  &kp V  &kp B          &Win_Back_Forward  &trans           &kp N        &kp M      &kp MINUS            &kp COMMA           &kp PERIOD
+&mkp MB1         &kp X         &kp C  &kp B  &kp V          &Win_Back_Forward  &trans           &kp N        &kp M      &kp MINUS            &kp COMMA           &kp PERIOD
 &kp Q            &Voice_Input                &lt 3 ENTER    &kp BACKSPACE      &kp RIGHT_SHIFT  &lt 6 SPACE  &kp RCTRL  &mt RIGHT_ALT SLASH  &mt RIGHT_GUI EXCL  &kp QUESTION
             >;
 
@@ -319,7 +336,7 @@
             bindings = <
 &kp Z            &kp W      &kp E  &kp R  &kp T          &kp Y              &kp U            &kp I        &kp L      &kp P
 &Scroll_Tap 8 A  &kp S      &kp D  &kp F  &kp G          &kp H              &kp J            &kp K        &kp O      &Jap_Eng
-&mkp MB1         &kp X      &kp C  &kp V  &kp B          &Win_Back_Forward  &trans           &kp N        &kp M      &kp MINUS            &kp COMMA          &kp PERIOD
+&mkp MB1         &kp X      &kp C  &kp B  &kp V          &Win_Back_Forward  &trans           &kp N        &kp M      &kp MINUS            &kp COMMA          &kp PERIOD
 &kp Q            &Password                &lt 3 ENTER    &kp BACKSPACE      &kp RIGHT_SHIFT  &lt 7 SPACE  &kp RCTRL  &mt RIGHT_ALT SLASH  &mt LEFT_GUI EXCL  &kp QUESTION
             >;
 
@@ -332,7 +349,7 @@
             bindings = <
 &kp Z            &kp W   &kp E  &kp R  &kp T          &kp Y              &kp U            &kp I        &kp L         &kp P
 &Scroll_Tap 8 A  &kp S   &kp D  &kp F  &kp G          &kp H              &kp J            &kp K        &kp O         &Jap_Eng
-&mkp MB1         &kp X   &kp C  &kp V  &kp B          &iOS_Back_Forward  &trans           &kp N        &kp M         &kp MINUS            &kp COMMA              &kp PERIOD
+&mkp MB1         &kp X   &kp C  &kp B  &kp V          &iOS_Back_Forward  &trans           &kp N        &kp M         &kp MINUS            &kp COMMA              &kp PERIOD
 &kp Q            &trans                &lt 5 ENTER    &kp BACKSPACE      &kp RIGHT_SHIFT  &lt 6 SPACE  &kp LEFT_GUI  &mt RIGHT_ALT SLASH  &mt RCTRL EXCLAMATION  &mt C_AC_NEXT_KEYBOARD_LAYOUT_SELECT QUESTION
             >;
 
@@ -343,10 +360,10 @@
 
         Win_US_Screen-Edit {
             bindings = <
-&kp LG(LEFT_ARROW)  &kp LG(RIGHT)      &kp LG(UP_ARROW)  &kp LG(TAB)  &Win_Copy_Cut       &kp RG(RS(S))  &kp RC(U)              &kp RC(B)                 &kp UP_ARROW      &kp CAPSLOCK
-&kp LG(LS(LEFT))    &kp LS(TAB)        &kp LEFT_ALT      &kp TAB      &Win_Paste_Value    &kp RC(P)      &kp LEFT               &kp RIGHT                 &kp DOWN          &kp LC(F)
-&kp LA(LEFT)        &kp LA(RIGHT)      &kp LC(LS(TAB))   &kp LC(TAB)  &kp LG(V)           &kp LC(S)      &kp RS(RC(LESS_THAN))  &kp RS(RC(GREATER_THAN))  &kp RS(RC(LEFT))  &kp RS(RC(RIGHT))  &kp RC(LEFT)  &kp RC(RIGHT)
-&kp LC(PAGE_UP)     &kp LC(PAGE_DOWN)                                 &trans              &kp F5         &kp RIGHT_SHIFT        &kp RC(A)                 &kp RS(HOME)      &kp RS(END)        &kp HOME      &kp END
+&kp LG(LEFT_ARROW)  &kp LG(RIGHT)      &kp LG(UP_ARROW)  &kp LG(TAB)       &kp LC(LS(TAB))    &kp RG(RS(S))  &kp RC(U)              &kp RC(B)                 &kp UP_ARROW      &kp CAPSLOCK
+&kp LG(LS(LEFT))    &kp LS(TAB)        &kp LEFT_ALT      &kp TAB           &kp LC(TAB)        &kp RC(P)      &kp LEFT               &kp RIGHT                 &kp DOWN          &kp LC(F)
+&kp LA(LEFT)        &kp LA(RIGHT)      &Win_Copy_Cut     &Win_Paste_Value  &kp LG(V)          &kp LC(S)      &kp RS(RC(LESS_THAN))  &kp RS(RC(GREATER_THAN))  &kp RS(RC(LEFT))  &kp RS(RC(RIGHT))  &kp RC(LEFT)  &kp RC(RIGHT)
+&kp LC(PAGE_UP)     &kp LC(PAGE_DOWN)                                      &trans             &kp F5         &kp RIGHT_SHIFT        &kp RC(A)                 &kp RS(HOME)      &kp RS(END)        &kp HOME      &kp END
             >;
 
             sensor-bindings =
@@ -356,10 +373,10 @@
 
         Win_JIS_Screen-Edit {
             bindings = <
-&kp LG(LEFT)      &kp LG(RIGHT)      &kp LG(UP_ARROW)  &kp LG(TAB)  &Win_Copy_Cut       &kp RG(RS(S))  &kp LC(U)              &kp RC(B)                 &kp UP_ARROW      &kp CAPSLOCK
-&kp LG(LS(LEFT))  &kp LS(TAB)        &kp LEFT_ALT      &kp TAB      &Win_Paste_Value    &kp LC(P)      &kp LEFT               &kp RIGHT                 &kp DOWN          &kp LC(F)
-&kp LA(LEFT)      &kp LA(RIGHT)      &kp LS(LC(TAB))   &kp LC(TAB)  &kp LG(V)           &kp LC(S)      &kp RC(RS(LESS_THAN))  &kp RC(RS(GREATER_THAN))  &kp RS(RC(LEFT))  &kp RS(RC(RIGHT))  &kp RC(LEFT)  &kp RC(RIGHT)
-&kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)                                 &trans              &kp F5         &kp RIGHT_SHIFT        &kp LC(A)                 &kp RS(HOME)      &kp RS(END)        &kp HOME      &kp END
+&kp LG(LEFT)      &kp LG(RIGHT)      &kp LG(UP_ARROW)  &kp LG(TAB)       &kp LC(LS(TAB))    &kp RG(RS(S))  &kp LC(U)              &kp RC(B)                 &kp UP_ARROW      &kp CAPSLOCK
+&kp LG(LS(LEFT))  &kp LS(TAB)        &kp LEFT_ALT      &kp TAB           &kp LC(TAB)        &kp LC(P)      &kp LEFT               &kp RIGHT                 &kp DOWN          &kp LC(F)
+&kp LA(LEFT)      &kp LA(RIGHT)      &Win_Copy_Cut     &Win_Paste_Value  &kp LG(V)          &kp LC(S)      &kp RC(RS(LESS_THAN))  &kp RC(RS(GREATER_THAN))  &kp RS(RC(LEFT))  &kp RS(RC(RIGHT))  &kp RC(LEFT)  &kp RC(RIGHT)
+&kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)                                      &trans             &kp F5         &kp RIGHT_SHIFT        &kp LC(A)                 &kp RS(HOME)      &kp RS(END)        &kp HOME      &kp END
             >;
 
             sensor-bindings =
@@ -369,10 +386,10 @@
 
         iOS_Screen-Edit {
             bindings = <
-&iOS_Screen_Left      &iOS_Screen_Right      &iOS_Fullscreen  &iOS_Controlmi  &iOS_Copy_Cut       &kp RG(RS(NUMBER_3))  &kp LG(U)        &kp LG(B)      &kp UP_ARROW      &kp CAPSLOCK
-&kp LG(H)             &kp LS(TAB)            &kp LEFT_GUI     &kp TAB         &iOS_Paste_Value    &trans                &kp LEFT         &kp RIGHT      &kp DOWN          &kp LG(F)
-&kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &kp LC(LS(TAB))  &kp LC(TAB)     &kp P               &kp E                 &kp LG(PLUS)     &kp LG(MINUS)  &kp LS(LA(LEFT))  &kp LS(LA(RIGHT))  &kp LA(LEFT)  &kp LA(RIGHT)
-&kp H                 &kp L                                                   &trans              &kp LG(R)             &kp RIGHT_SHIFT  &kp LG(A)      &kp LS(LG(LEFT))  &kp LS(LG(RIGHT))  &kp LG(LEFT)  &kp LG(RIGHT)
+&iOS_Screen_Left      &iOS_Screen_Right      &iOS_Fullscreen  &iOS_Controlmi    &kp LC(LS(TAB))    &kp RG(RS(NUMBER_3))  &kp LG(U)        &kp LG(B)      &kp UP_ARROW      &kp CAPSLOCK
+&kp LG(H)             &kp LS(TAB)            &kp LEFT_GUI     &kp TAB           &kp LC(TAB)        &trans                &kp LEFT         &kp RIGHT      &kp DOWN          &kp LG(F)
+&kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &iOS_Copy_Cut    &iOS_Paste_Value  &kp H              &kp L                 &kp LG(PLUS)     &kp LG(MINUS)  &kp LS(LA(LEFT))  &kp LS(LA(RIGHT))  &kp LA(LEFT)  &kp LA(RIGHT)
+&kp P                 &kp E                                                     &trans             &kp LG(R)             &kp RIGHT_SHIFT  &kp LG(A)      &kp LS(LG(LEFT))  &kp LS(LG(RIGHT))  &kp LG(LEFT)  &kp LG(RIGHT)
             >;
 
             sensor-bindings =
