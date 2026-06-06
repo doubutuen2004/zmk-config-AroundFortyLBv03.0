@@ -227,7 +227,7 @@
                 <&kp LG(X)>,
                 <&macro_release>,
                 <&kp LEFT_GUI>,
-                <&macro_tap>,
+                <&macro_wait_time 200>,
                 <&kp U>,
                 <&macro_tap>,
                 <&kp S>;
