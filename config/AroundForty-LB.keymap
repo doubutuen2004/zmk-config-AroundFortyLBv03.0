@@ -112,6 +112,12 @@
             key-positions = <6 7>;
             layers = <0 1>;
         };
+
+        Win_Sleep-S {
+            bindings = <&kp S>;
+            key-positions = <8 7>;
+            layers = <0 1>;
+        };
     };
 
     //マクロ(既存のキーの組み合わせ)
@@ -306,7 +312,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "WIN_PASTE_VALUE";
             #binding-cells = <0>;
-            bindings = <&kp RC(V)>, <&kp RS(RC(V))>;
+            bindings = <&kp LC(LS(V))>, <&kp LC(V)>;
         };
 
         Win_Copy_Cut: Win_Copy_Cut {
@@ -320,7 +326,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "IOS_PASTE_VALUE";
             #binding-cells = <0>;
-            bindings = <&kp RG(V)>, <&kp RS(RG(V))>;
+            bindings = <&kp LG(LS(V))>, <&kp LG(V)>;
         };
 
         iOS_Back_Forward: iOS_Back_Forward {
@@ -436,9 +442,9 @@
 
         Scroll {
             bindings = <
-&trans  &kp LG(PLUS)      &BT3_Layer2  &BT2_Layer2  &trans    &trans  &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC  &trans      &trans
-&trans  &mt LCTRL LG(N0)  &BT1_Layer1  &BT0_Layer0  &trans    &trans  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &trans      &trans
-&trans  &kp LG(MINUS)     &trans       &trans       &trans    &trans  &trans             &trans                &kp C_MUTE  &trans  &trans  &trans
+&trans  &kp LG(PLUS)      &trans       &BT1_Layer1  &trans    &trans  &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC  &trans      &trans
+&trans  &mt LCTRL LG(N0)  &BT3_Layer2  &BT0_Layer0  &trans    &trans  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &trans      &trans
+&trans  &kp LG(MINUS)     &trans       &BT2_Layer2  &trans    &trans  &trans             &trans                &kp C_MUTE  &trans  &trans  &trans
 &trans  &trans                                      &mo 9     &trans  &trans             &trans                &trans      &trans  &trans  &trans
             >;
         };
