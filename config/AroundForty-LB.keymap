@@ -442,10 +442,10 @@
 
         Scroll {
             bindings = <
-&trans  &kp LG(PLUS)      &trans       &BT1_Layer1  &trans    &trans  &kp C_VOLUME_UP    &kp C_BRIGHTNESS_INC  &trans      &trans
-&trans  &mt LCTRL LG(N0)  &BT3_Layer2  &BT0_Layer0  &trans    &trans  &kp C_VOLUME_DOWN  &kp C_BRIGHTNESS_DEC  &trans      &trans
-&trans  &kp LG(MINUS)     &trans       &BT2_Layer2  &trans    &trans  &trans             &trans                &kp C_MUTE  &trans  &trans  &trans
-&trans  &trans                                      &mo 9     &trans  &trans             &trans                &trans      &trans  &trans  &trans
+&trans  &kp LG(PLUS)      &trans       &BT1_Layer1  &trans    &trans  &kp C_VOLUME_UP    &trans  &kp C_BRIGHTNESS_INC  &trans
+&trans  &mt LCTRL LG(N0)  &BT3_Layer2  &BT0_Layer0  &trans    &trans  &kp C_VOLUME_DOWN  &trans  &kp C_BRIGHTNESS_DEC  &trans
+&trans  &kp LG(MINUS)     &trans       &BT2_Layer2  &trans    &trans  &trans             &trans  &kp C_MUTE            &trans  &trans  &trans
+&trans  &trans                                      &mo 9     &trans  &trans             &trans  &trans                &trans  &trans  &trans
             >;
         };
 
