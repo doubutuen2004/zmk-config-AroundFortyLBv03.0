@@ -411,7 +411,7 @@
             bindings = <
 &iOS_Screen_Left      &iOS_Screen_Right      &iOS_Fullscreen   &iOS_Controlmi  &kp LC(LS(TAB))    &kp RG(RS(NUMBER_3))  &kp LG(U)        &kp LG(B)      &kp UP_ARROW      &kp CAPSLOCK
 &kp LG(H)             &kp LS(TAB)            &kp LEFT_GUI      &kp TAB         &kp LC(TAB)        &trans                &kp LEFT         &kp RIGHT      &kp DOWN          &kp LG(F)
-&kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &iOS_Paste_Value  &iOS_Copy_Cut   &kp H              &kp L                 &kp LG(PLUS)     &kp LG(MINUS)  &kp LS(LA(LEFT))  &kp LS(LA(RIGHT))  &kp LA(LEFT)  &kp LA(RIGHT)
+&kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &iOS_Paste_Value  &iOS_Copy_Cut   &kp H              &kp V                 &kp LG(PLUS)     &kp LG(MINUS)  &kp LS(LA(LEFT))  &kp LS(LA(RIGHT))  &kp LA(LEFT)  &kp LA(RIGHT)
 &kp P                 &kp E                                                    &trans             &kp LG(R)             &kp RIGHT_SHIFT  &kp LG(A)      &kp LS(LG(LEFT))  &kp LS(LG(RIGHT))  &kp LG(LEFT)  &kp LG(RIGHT)
             >;
 
